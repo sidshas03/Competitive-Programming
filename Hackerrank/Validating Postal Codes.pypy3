@@ -1,0 +1,10 @@
+import re
+
+contain_6_digits = lambda x: bool(re.fullmatch(r'\d{6}', x))
+
+alternate_digits = lambda x: len(re.findall(r'(\d)\1{1}', x[::2])) + len(re.findall(r'(\d)\1{1}', x[1::2])) < 2
+    
+tests = [contain_6_digits, alternate_digits]
+
+s = input()
+print(all(map(lambda x: x(s), tests)))
