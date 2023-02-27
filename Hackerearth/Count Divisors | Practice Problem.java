@@ -1,8 +1,5 @@
 import java.util.*;
 
-
-// Warning: Printing unwanted or ill-formatted data to output will cause the test cases to fail
-
 class TestClass {
     public static void main(String args[] ) throws Exception {
        Scanner sc=new Scanner(System.in);
